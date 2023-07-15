@@ -79,7 +79,7 @@ noise_std = 1
 samples = np.random.normal(noise_mean, noise_std, size= 1) # sample code for gaussian white noise
 
 # using 200bus data event 1
-train_data = pd.read_csv("C:\\Users\\mazhi\\Downloads\\Input_Files_new_time_format (1) (1)\\Input_Files_new_time_format\\Sample_datasets\\output_VM_1.csv")
+train_data = pd.read_csv("Sample.csv")
 # Vm_data = pd.read_csv
 # train_data_2 =  pd.read_csv("C:\\Users\\zhihao's home\\Downloads\\testing.csv")
 Dataset1 = train_data.values
