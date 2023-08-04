@@ -1,0 +1,41 @@
+!EPRI Feeder J1, OpenDSS
+! This Circuit model is provided to the public by EPRI (Electric Power Research Institute) as part of the Distributed Renewables Research Program (P174).
+! Please feel free to use this circuit model for further research/study. 
+! For reference purposes, please use: EPRI Feeder J1, Distributed PV (DPV) Monitoring and Feeder Analysis, dpv.epri.com, 2013
+Clear
+New LoadShape.load1_24 npts=24 interval=1 mult=(file=Pecan_3996.CSV, col=4, header=no)
+New LoadShape.load2_24 npts=24 interval=1 mult=(file=Pecan_2318.CSV, col=4, header=no)
+New LoadShape.load3_24 npts=24 interval=1 mult=(file=Pecan_1417.CSV, col=4, header=no)
+New LoadShape.load4_24 npts=24 interval=1 mult=(file=Pecan_4283.CSV, col=4, header=no)
+New LoadShape.load5_24 npts=24 interval=1 mult=(file=Pecan_5982.CSV, col=4, header=no)
+
+New LoadShape.PV1_24 npts=24 interval=1 mult=(file=PV_Pecan_27.CSV, col=4, header=no)
+New LoadShape.PV2_24 npts=24 interval=1 mult=(file=PV_Pecan_142.CSV, col=4, header=no)
+New LoadShape.PV3_24 npts=24 interval=1 mult=(file=PV_Pecan_387.CSV, col=4, header=no)
+New LoadShape.PV4_24 npts=24 interval=1 mult=(file=PV_Pecan_914.CSV, col=4, header=no)
+New LoadShape.PV5_24 npts=24 interval=1 mult=(file=PV_Pecan_950.CSV, col=4, header=no)
+New LoadShape.PV6_24 npts=24 interval=1 mult=(file=PV_Pecan_1222.CSV, col=4, header=no)
+
+
+Redirect LoadShapes_mod.dss
+Redirect Substation.dss
+Redirect LineCodes.dss
+Redirect Lines.dss
+Redirect Transformers.dss
+Redirect LoadsInd_pecan.dss
+Redirect Services.dss
+!Redirect Capacitors.dss
+!Redirect Capacitors_noctrl.dss
+Redirect Regulators.dss
+!Redirect ExistingPV.dss
+
+set maxiter=100
+set maxcontroliter=100
+
+Set voltagebases=[69, 12.47, 7.2, 0.480, 0.416]
+Calcv
+Solve
+
+!redirect monitors.dss
+
+Buscoords Buscoords.dss

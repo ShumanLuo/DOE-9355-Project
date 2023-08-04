@@ -1,0 +1,17 @@
+
+New monitor.PVSite1 element=PVSystem.3P_ExistingSite1 terminal=1 mode=65 ppolar=no
+New monitor.PVSite2 element=PVSystem.3P_ExistingSite2 terminal=1 mode=65 ppolar=no
+New monitor.PVSite3 element=PVSystem.3P_ExistingSite3 terminal=1 mode=65 ppolar=no
+New monitor.PVSite4 element=PVSystem.3P_ExistingSite4 terminal=1 mode=65 ppolar=no
+New monitor.PVSite5 element=PVSystem.C_Existing2 terminal=1 mode=1 ppolar=no
+New monitor.PVSite6 element=PVSystem.B_Existing3  terminal=1 mode=1 ppolar=no
+New monitor.PVSite7 element=PVSystem.C_Existing5  terminal=1 mode=1 ppolar=no
+New monitor.PVSite8 element=PVSystem.B_Existing7 terminal=1 mode=1 ppolar=no
+New monitor.PVSite9 element=PVSystem.A_Existing9 terminal=1 mode=1 ppolar=no
+New monitor.PVSite10 element=PVSystem.C_Existing10 terminal=1 mode=1 ppolar=no
+New monitor.PVSite11 element=PVSystem.C_Existing11 terminal=1 mode=1 ppolar=no
+New monitor.PVSite12 element=PVSystem.B_Existing12 terminal=1 mode=1 ppolar=no
+New monitor.PVSite13 element=PVSystem.C_Existing13 terminal=1 mode=1 ppolar=no
+!New monitor.PVSite14 element=PVSystem.3P_ExistingSite1 terminal=1 mode=1 ppolar=no
+
+
